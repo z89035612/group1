@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// ==============================================
+Route::get('/users/{user}', function(\App\User $user){
+    return $user;
+});
+
+// Voyager套件規則 ==============================
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
