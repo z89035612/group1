@@ -47,7 +47,11 @@ class DataTypesTableSeeder extends Seeder
                 'display_name_plural'   => __('voyager::seeders.data_types.role.plural'),
                 'icon'                  => 'voyager-lock',
                 'model_name'            => 'TCG\\Voyager\\Models\\Role',
+<<<<<<< HEAD
                 'controller'            => '',
+=======
+                'controller'            => 'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController',
+>>>>>>> cherry
                 'generate_permissions'  => 1,
                 'description'           => '',
             ])->save();

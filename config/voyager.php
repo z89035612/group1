@@ -13,11 +13,14 @@ return [
     'user' => [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
+<<<<<<< HEAD
         // Set `namespace` to `null` to use `config('auth.providers.users.model')` value
         // Set `namespace` to a class to override auth user model.
         // However make sure the appointed class must ready to use before installing voyager.
         // Otherwise `php artisan voyager:install` will fail with class not found error.
         'namespace'                    => null,
+=======
+>>>>>>> cherry
         'default_avatar'               => 'users/default.png',
         'redirect'                     => '/admin',
     ],
@@ -32,7 +35,11 @@ return [
     */
 
     'controllers' => [
+<<<<<<< HEAD
         'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+=======
+        'namespace' => 'App\\Http\\Controllers\\Voyager',
+>>>>>>> cherry
     ],
 
     /*
@@ -200,6 +207,7 @@ return [
     ],
 
     'googlemaps' => [
+<<<<<<< HEAD
          'key'    => env('GOOGLE_MAPS_KEY', ''),
          'center' => [
              'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
@@ -207,6 +215,15 @@ return [
          ],
          'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
      ],
+=======
+        'key'    => env('GOOGLE_MAPS_KEY', ''),
+        'center' => [
+            'lat' => env('GOOGLE_MAPS_DEFAULT_CENTER_LAT', '32.715738'),
+            'lng' => env('GOOGLE_MAPS_DEFAULT_CENTER_LNG', '-117.161084'),
+        ],
+        'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
+    ],
+>>>>>>> cherry
 
     /*
     |--------------------------------------------------------------------------
@@ -238,6 +255,7 @@ return [
           'video/mp4',
         ],
         */
+<<<<<<< HEAD
        //Path for media-manager. Relative to the filesystem.
        'path'                => '/',
        'show_folders'        => true,
@@ -247,6 +265,17 @@ return [
        'allow_create_folder' => true,
        'allow_rename'        => true,
        /*'watermark'           => [
+=======
+        //Path for media-manager. Relative to the filesystem.
+        'path'                => '/',
+        'show_folders'        => true,
+        'allow_upload'        => true,
+        'allow_move'          => true,
+        'allow_delete'        => true,
+        'allow_create_folder' => true,
+        'allow_rename'        => true,
+        /*'watermark'           => [
+>>>>>>> cherry
             'source'         => 'watermark.png',
             'position'       => 'bottom-left',
             'x'              => 0,
@@ -261,5 +290,9 @@ return [
                 'height'=> 500
            ],
        ]*/
+<<<<<<< HEAD
    ],
+=======
+    ],
+>>>>>>> cherry
 ];
