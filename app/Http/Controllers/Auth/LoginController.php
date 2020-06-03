@@ -44,16 +44,4 @@ class LoginController extends Controller
         return 'name';
     }
 
-    public function redirectToProvider($provider)
-    {
-        //透過感應器來取得用戶
-        $user = Socialite::driver($provider)->user();
-        //透過用戶和供應器來尋找或建立用戶
-        $authUser = $this->findOrCreateUser($user, $provider);
-        //進行登入並開啟記得我
-        Auth::login($authUser, true);
-
-        return redirect($this->redirectto);
-    }
-
 }

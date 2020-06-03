@@ -15,4 +15,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function who(Request $request)
+    {
+        dd(Auth::user());
+    }
+
+    public function loginout()
+    {
+        Auth::logout();
+    }
 }
