@@ -31,6 +31,7 @@ class CreateNewusersTable extends Migration
                 //設為允許null
                 $table->rememberToken()->nullable();
                 $table->timestamps();
+            });
         });
     }
 
