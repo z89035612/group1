@@ -27,3 +27,8 @@ Route::group(['prefix' => 'admin'], function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('products', 'ProductsController');
+
+Route::get('/products/showalbums/{product}', 'ProductController@showAlbums');
+Route::get('/products/showartists/{product}', 'ProductController@showArtists');

@@ -2,7 +2,8 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+
+// use Illuminate\Support\Facades\Schema;
 
 class CreateProductsTable extends Migration
 {
@@ -19,7 +20,7 @@ class CreateProductsTable extends Migration
             //歌曲編號
             $table->integer('pro_no');
             //歌名
-            $table->string('pro_name');
+            $table->char('pro_name');
             //專輯名稱
             $table->string('album');
             //歌手
