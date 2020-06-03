@@ -41,7 +41,7 @@ class LoginController extends Controller
     //改用username(帳號)進行登入
     public function username()
     {
-        return 'name';
+        return 'username';
     }
 
 }
