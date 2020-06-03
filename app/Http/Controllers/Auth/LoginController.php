@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use User;
 use Auth;
 
 class LoginController extends Controller
@@ -42,6 +44,17 @@ class LoginController extends Controller
     public function username()
     {
         return 'username';
+    }
+
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    public function redirectTo()
+    {
+        //假如是一般使用者
+        //假如是管理員
     }
 
 }
